@@ -26,6 +26,7 @@ public class EnemyRagdollHealth : Health
 
     public void Death(Transform explosionPoint)
     {
+        Damaged?.Invoke(CurrentValue);
         _ragdollParent.parent = null;
         _ragdollParent.SetParent(null);
 
@@ -53,6 +54,8 @@ public class EnemyRagdollHealth : Health
 
     public void Death(Transform explosionPoint, float force)
     {
+        Damaged?.Invoke(CurrentValue);
+
         _ragdollParent.parent = null;
         _ragdollParent.SetParent(null);
 

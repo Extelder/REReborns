@@ -10,7 +10,7 @@ public abstract class Health : MonoBehaviour
     
     public event Action<float> HealthValueChanged;
     public event Action<float> OnHealedToMax;
-    public event Action<float> Damaged;
+    public Action<float> Damaged;
 
     private void Awake()
     {

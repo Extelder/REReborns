@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using EvolveGames;
 using UnityEngine;
@@ -7,6 +8,7 @@ public class PickUpScript : MonoBehaviour
 {
     [SerializeField] private LayerMask _checkMask;
     [SerializeField] private PlayerController _controller;
+    [SerializeField] private GameObject _hintObject;
 
     public GameObject player;
 
@@ -38,12 +40,41 @@ public class PickUpScript : MonoBehaviour
 
 
         _lookSpeed = _controller.lookSpeed;
+        StartCoroutine(Checkking());
         //mouseLookScript = player.GetComponent<MouseLookScript>();
+    }
+
+    private Coroutine stopping;
+
+    private IEnumerator Checkking()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(0.1f);
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit,
+                pickUpRange, _checkMask))
+            {
+                if (hit.collider.TryGetComponent<IPickupable>(out IPickupable pickupable))
+                {
+                    if (!pickupable.CanPickup)
+                    {
+                        _hintObject.SetActive(false);
+                        continue;
+                    }
+
+                    _hintObject.SetActive(true);
+                    continue;
+                }
+            }
+
+            _hintObject.SetActive(false);
+        }
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E)) //change E to whichever key you want to press to pick up
+        if (Input.GetKeyDown(KeyCode.F)) //change E to whichever key you want to press to pick up
         {
             if (heldObj == null) //if currently not holding anything
             {
@@ -55,6 +86,8 @@ public class PickUpScript : MonoBehaviour
                     //make sure pickup tag is attached
                     if (hit.collider.TryGetComponent<IPickupable>(out IPickupable pickupable))
                     {
+                        if (!pickupable.CanPickup)
+                            return;
                         pickupable.Pickuped();
                         //pass in object hit into the PickUpObject function
                         PickUpObject(hit.transform.gameObject);
@@ -111,8 +144,10 @@ public class PickUpScript : MonoBehaviour
 
     void DropObject()
     {
-        StopAllCoroutines();
-        StartCoroutine(Stopping(heldObj));
+        if (stopping != null)
+
+            StopCoroutine(stopping);
+        stopping = StartCoroutine(Stopping(heldObj));
         //re-enable collision with player
         heldObjRb.isKinematic = false;
         heldObj.transform.parent = null; //unparent object
@@ -164,8 +199,9 @@ public class PickUpScript : MonoBehaviour
 
     void ThrowObject()
     {
-        StopAllCoroutines();
-        StartCoroutine(Stopping(heldObj));
+        if (stopping != null)
+            StopCoroutine(stopping);
+        stopping = StartCoroutine(Stopping(heldObj));
         _controller.lookSpeed = _lookSpeed;
 
         //same as drop function, but add force to object before undefining it

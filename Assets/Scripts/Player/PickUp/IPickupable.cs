@@ -4,5 +4,7 @@ using UnityEngine;
 
 public interface IPickupable
 {
+    public bool CanPickup { get; set; }
+    
     public void Pickuped();
 }
