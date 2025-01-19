@@ -17,7 +17,7 @@ public class BreakableWithBrokenPart : HitBox
 
     private void DefaultVisit()
     {
-        _normalObject.SetActive(false);
+        Destroy(_normalObject);
         _brokenObject.SetActive(true);
         _collider.enabled = false;
         if (_destroyScriptAfterBroke)

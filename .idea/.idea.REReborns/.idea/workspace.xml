@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8f5e9a1e-ebe8-4a08-9cae-92c669f2d4b0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.REReborns/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.REReborns/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.REReborns/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.REReborns/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GabrielAguiarProductions/FreeQuickEffectsVol1_2022_BIRP_v1.0.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GabrielAguiarProductions/FreeQuickEffectsVol1_2022_HDRP_v1.0.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GabrielAguiarProductions/FreeQuickEffectsVol1_2022_URP_v1.0.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/1737298757315zu0oq2xw-voicemaker.in-speech.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/1737298757315zu0oq2xw-voicemaker.in-speech.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/17372987843994c4l9s2-voicemaker.in-speech.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/17372987843994c4l9s2-voicemaker.in-speech.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/ElevenLabs_2025_01_19T14_41_39_Anthony_Francis_pvc_s86_sb19_se74.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/ElevenLabs_2025_01_19T14_41_39_Anthony_Francis_pvc_s86_sb19_se74.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/ElevenLabs_2025_01_19T14_44_38_Anthony_Francis_pvc_s86_sb19_se74.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/ElevenLabs_2025_01_19T14_44_38_Anthony_Francis_pvc_s86_sb19_se74.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/StoneDrop.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/StoneDrop.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/crystal-glow-SBA-300099769-preview (mp3cut.net).mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/crystal-glow-SBA-300099769-preview (mp3cut.net).mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Packages/Old Sea Port/scenes/Dock Thing 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/Old Sea Port/scenes/Dock Thing 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/Old Sea Port/scenes/Dock Thing/NavMesh-NavMeshSurface.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/Old Sea Port/scenes/Dock Thing/NavMesh-NavMeshSurface.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/BreakableWithBrokenPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/BreakableWithBrokenPart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Enemies/Knight/StateMachine/KnightStates/EnemyChaseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Enemies/Knight/StateMachine/KnightStates/EnemyChaseState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +42,18 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WaterKill.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BreakableWithBrokenPart.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Enemies/Knight/StateMachine/KnightStates/EnemyChaseState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WaterKill.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="2rqW7Pt7wk5TG0LUpMVXQl2d8A4" />
   <component name="ProjectViewState">
@@ -61,11 +96,23 @@
       <updated>1737286922960</updated>
       <workItem from="1737286956916" duration="1191000" />
       <workItem from="1737302646356" duration="311000" />
+      <workItem from="1737311319367" duration="1970000" />
     </task>
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

@@ -12,11 +12,13 @@ public class EnemyChaseState : EnemyState
     {
         PlayRunAnim(true);
         Debug.Log("DOGONYALKKIIII");
+        _agent.speed = 4;
     }
 
     public override void Exit()
     {
         PlayRunAnim(false);
+        _agent.speed = 2.2f;
     }
 
     public override void StateUpdate()
