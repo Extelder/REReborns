@@ -37,7 +37,7 @@ public class EnemyOverlapAttackState : EnemyState
     public void Attack()
     {
         _enemyGoingToOverlapAttack.PerformAttack();
-        DeathMenui.Instance.Death();
+        PlayerDialogue.Instance.Death();
     }
 
     public void PlayAttackAnim(bool isAttacking)
